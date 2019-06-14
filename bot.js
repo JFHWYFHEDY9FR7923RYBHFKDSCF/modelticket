@@ -391,7 +391,7 @@ if(!message.channel.guild) return message.reply(' ');
 ${thisMessage}**
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 **السعر**: ${boi}
-**الشخص الذي عرض التاق**: ${message.author`);
+**الشخص الذي عرض التاق**: ${message.author}`);
  
         }
  
