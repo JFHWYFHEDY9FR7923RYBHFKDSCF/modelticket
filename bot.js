@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- 
+const prefix = "m!";
+
+const adminprefix = "m!"; 
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -14,14 +17,14 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Model Shop ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Model Shop |Prefix:m!`,"https://www.twitch.tv/idk");/
+client.user.setGame(`Model Shop |Prefix:m!`,"https://www.twitch.tv/idk");
 client.user.setStatus("idle")
  
 });
  
 var guilds = {};
 client.on('message',async message => {
- var prefix2 = '#';//البرفكس
+ var prefix2 = 'm!';//البرفكس
   if(message.content.startsWith(prefix2 + "تقديم")) {
  
 if(!message.channel.guild) return message.reply(' ');
@@ -179,7 +182,7 @@ client.on("message", msg => {
     if(msg.author.bot) return;
 if(!msg.guild.member(msg.author).hasPermission("MANAGE_ROLES")) return;
     if(msg.channel.type === 'dm') return;
-  let prefix = '#'; //البرفكس
+  let prefix = 'm!'; //البرفكس
   let msgarray = msg.content.split(" ");
   let cmd = msgarray[0];
   let args = msgarray.slice(1);
@@ -214,7 +217,7 @@ client.on("message", msg => {
     if(msg.author.bot) return;
 if(!msg.guild.member(msg.author).hasPermission("MANAGE_ROLES")) return;
     if(msg.channel.type === 'dm') return;
-  let prefix = '#'; //البرفكس
+  let prefix = 'm!'; //البرفكس
   let msgarray = msg.content.split(" ");
   let cmd = msgarray[0];
   let args = msgarray.slice(1);
@@ -243,7 +246,7 @@ client.on("message", msg => {
     if(msg.author.bot) return;
     if(msg.channel.type === 'dm') return;
 if(!msg.guild.member(msg.author).hasPermission("MANAGE_ROLES")) return;
-  let prefix = '#'; //البرفكس
+  let prefix = 'm!'; //البرفكس
   let msgarray = msg.content.split(" ");
   let cmd = msgarray[0];
   let args = msgarray.slice(1);
